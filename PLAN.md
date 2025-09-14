@@ -12,26 +12,25 @@ Create a comprehensive markdown-based project management format that bridges the
 ### Finished
 1. Make initial git commit @Claude @hiremaga #medium
 2. [[#Create minimal viable FlapJack format]]
+3. [[#Create formal specification document]]
+4. [[#Ensure basic Obsidian compatibility]]
 
 ### Started
-1. [[#Create formal specification document]]
 
 ### Unstarted
 1. [[#Create project README]]
 
 ## Iteration 1 - Core Specification & Validation
-1. Set up validation/linting #small
-2. [[#Create minimal working examples]]
+1. [[#Create minimal working examples]]
+1. Stories in external files
 
-## Iteration 2 - Tool Integration
-1. [[#Add basic Obsidian support]]
-2. Create story templates #xsmall
-3. Basic CSS styling #small
+## Iteration 2 - Basic Tooling
+1. CLI validates FlapJack format (or LSP support) #xlarge
+1. CLI performs basic CRUD operations? This might not be needed.
 
-## Iteration 3 - Advanced Features
-1. Multi-file format support #xxlarge
-2. Cross-file wiki-links #medium
-3. Directory structure templates #small
+## Iteration 3 - Advanced Tooling
+1. Web UI to manage iterations and stories #xxlarge
+1. CLI REPL #xxlarge
 
 ## Iteration 4 - Documentation & Guides
 1. Getting started guide
@@ -65,15 +64,19 @@ Clear README explaining FlapJack purpose and quick start instructions.
 
 As a new user, I want clear examples so that I can understand how to use FlapJack for my projects. #medium
 
-### Add basic Obsidian support
+### Ensure basic Obsidian compatibility
 
 As an Obsidian user, I want FlapJack to work seamlessly with wiki-links and graph view. #small
 
-- [ ] Code/format changes work as specified
-- [ ] Documentation is updated
-- [ ] Changes are committed to git
-- [ ] Format remains human and LLM readable
-- [ ] No breaking changes to existing valid FlapJack files
+- [x] PLAN.md renders well in Obsidian
+- [x] Link navigation from iteration to story works
+- [x] Checkbox can be checked from Obsidian directly
+- [x] `#tag` searches work
+- [x] Code syntax highlighting works in Obsidian
+- [x] Code syntax highlighting works in Obsidian
+  ```bash
+  echo "Hello, World!"
+  ```
 
 ## Guidelines
 
