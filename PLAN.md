@@ -23,7 +23,7 @@ type: FEATURE
 title: Create minimal viable FlapJack format
 points: 3
 owner: Claude + Human
-labels: [mvp, core]
+labels: #mvp, #core
 ---
 
 As a project manager, I want a basic FlapJack format so that I can start tracking this project immediately.
@@ -42,12 +42,12 @@ type: CHORE
 title: Create project README
 points: 1
 owner: Claude
-labels: [docs, setup]
+labels: #docs, #setup
 ---
 
 Clear README explaining FlapJack purpose and quick start instructions.
 
-- [CHORE 1pt] Make initial git commit
+- CHORE: Make initial git commit #setup
 
 ## Backlog
 
@@ -56,33 +56,33 @@ iteration: Phase 1 - Core Specification
 focus: Document the format we're using and make it type-safe
 ---
 
-1. [[Create formal specification document]]
-2. [CHORE 2pt] Set up validation/linting
-3. [[Create minimal working examples]]
+1. [[#Create formal specification document]]
+2. CHORE: Set up validation/linting #tools, #quality
+3. [[#Create minimal working examples]]
 
 ---
 iteration: Phase 2 - Tool Integration
 focus: Basic Obsidian compatibility and templates
 ---
 
-1. [[Add basic Obsidian support]]
-2. [CHORE 1pt] Create story templates
-3. [CHORE 2pt] Basic CSS styling
+1. [[#Add basic Obsidian support]]
+2. CHORE: Create story templates #tools, #obsidian
+3. CHORE: Basic CSS styling #tools, #obsidian
 
 ---
 iteration: Phase 3 - Advanced Features
 focus: Multi-file support and scalability
 ---
 
-1. [FEATURE 8pt] Multi-file format support
-2. [FEATURE 3pt] Cross-file wiki-links
-3. [CHORE 2pt] Directory structure templates
+1. FEATURE(8pt): Multi-file format support #advanced, #scalability
+2. FEATURE(3pt): Cross-file wiki-links #advanced, #obsidian
+3. CHORE: Directory structure templates #advanced, #scalability
 
 ---
 type: FEATURE
 title: Create formal specification document
 points: 5
-labels: [spec, core]
+labels: #spec, #core
 ---
 
 As a developer/LLM, I want a formal specification so that I can validate FlapJack format and build tools around it.
@@ -91,7 +91,7 @@ As a developer/LLM, I want a formal specification so that I can validate FlapJac
 type: FEATURE
 title: Create minimal working examples
 points: 3
-labels: [examples, docs]
+labels: #examples, #docs
 ---
 
 As a new user, I want clear examples so that I can understand how to use FlapJack for my projects.
@@ -100,7 +100,7 @@ As a new user, I want clear examples so that I can understand how to use FlapJac
 type: FEATURE
 title: Add basic Obsidian support
 points: 2
-labels: [tools, obsidian]
+labels: #tools, #obsidian
 ---
 
 As an Obsidian user, I want FlapJack to work seamlessly with wiki-links and graph view.
