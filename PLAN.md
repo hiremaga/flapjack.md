@@ -4,7 +4,7 @@
 Create a comprehensive markdown-based project management format that bridges the gap between traditional PM tools and developer-friendly workflows. FlapJack (Fluid, Layered Agile Planning for Just-right Agile Collaboration & Knowledge-tracking) should be maintainable by both humans and LLMs, fault-tolerant, and git-friendly.
 
 ## Team
-- @Claude
+- @Claude Code
 - @hiremaga
 
 ## Iteration 0 – Bootstrap
@@ -57,7 +57,7 @@ As a project manager, I want a basic FlapJack format so that I can start trackin
 As a developer/LLM, I want a formal specification so that I can validate FlapJack format and build tools around it.
 
 ### Create project README
-@Claude
+@Claude Code
 
 Clear README explaining FlapJack purpose and quick start instructions.
 
