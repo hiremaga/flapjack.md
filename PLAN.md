@@ -1,120 +1,86 @@
----
-project: FlapJack
-created: 2025-09-14
-last_updated: 2025-09-14
-current_iteration: MVP Bootstrap
-team_capacity: 1 developer + 1 LLM
----
+# FlapJack Plan
 
-# FlapJack Project Plan
-
-## Project Vision
+## Vision
 Create a comprehensive markdown-based project management format that bridges the gap between traditional PM tools and developer-friendly workflows. FlapJack (Fluid, Layered Agile Planning for Just-right Agile Collaboration & Knowledge-tracking) should be maintainable by both humans and LLMs, fault-tolerant, and git-friendly.
 
----
-iteration: MVP Bootstrap
-focus: Get basic FlapJack format working by dogfooding it
----
+## Team
+- @Claude
+- @hiremaga
+
+## Iteration 0 – Bootstrap
+
+### Finished
+1. Make initial git commit @Claude @hiremaga #medium
+2. [[#Create minimal viable FlapJack format]]
 
 ### Started
+1. [[#Create formal specification document]]
 
----
-type: FEATURE
-title: Create minimal viable FlapJack format
-points: 3
-owner: Claude + Human
-labels: #mvp, #core
----
+### Unstarted
+1. [[#Create project README]]
+
+## Iteration 1 - Core Specification & Validation
+1. Set up validation/linting #small
+2. [[#Create minimal working examples]]
+
+## Iteration 2 - Tool Integration
+1. [[#Add basic Obsidian support]]
+2. Create story templates #xsmall
+3. Basic CSS styling #small
+
+## Iteration 3 - Advanced Features
+1. Multi-file format support #xxlarge
+2. Cross-file wiki-links #medium
+3. Directory structure templates #small
+
+## Iteration 4 - Documentation & Guides
+1. Getting started guide
+2. Migration guide between formats
+3. Tool setup guides
+
+## Stories
+
+### Create minimal viable FlapJack format
+@Claude @hiremaga #medium
 
 As a project manager, I want a basic FlapJack format so that I can start tracking this project immediately.
 
-**Acceptance Criteria:**
-- [ ] PLAN.md uses FlapJack format
-- [ ] Basic story syntax works with metadata blocks
-- [ ] Simple iteration structure (Current + Backlog)
-- [ ] Support for both inline and detailed story formats
-- [ ] Wiki-links for cross-references
+- [x] PLAN.md uses FlapJack format
+- [x] Basic story syntax works with metadata blocks
+- [x] Simple iteration structure (Current + Backlog)
+- [x] Support for both inline and detailed story formats
+- [x] Wiki-links for cross-references
 
-### Unstarted
-
----
-type: CHORE
-title: Create project README
-points: 1
-owner: Claude
-labels: #docs, #setup
----
-
-Clear README explaining FlapJack purpose and quick start instructions.
-
-- CHORE: Make initial git commit #setup
-
-## Backlog
-
----
-iteration: Phase 1 - Core Specification
-focus: Document the format we're using and make it type-safe
----
-
-1. [[#Create formal specification document]]
-2. CHORE: Set up validation/linting #tools, #quality
-3. [[#Create minimal working examples]]
-
----
-iteration: Phase 2 - Tool Integration
-focus: Basic Obsidian compatibility and templates
----
-
-1. [[#Add basic Obsidian support]]
-2. CHORE: Create story templates #tools, #obsidian
-3. CHORE: Basic CSS styling #tools, #obsidian
-
----
-iteration: Phase 3 - Advanced Features
-focus: Multi-file support and scalability
----
-
-1. FEATURE(8pt): Multi-file format support #advanced, #scalability
-2. FEATURE(3pt): Cross-file wiki-links #advanced, #obsidian
-3. CHORE: Directory structure templates #advanced, #scalability
-
----
-type: FEATURE
-title: Create formal specification document
-points: 5
-labels: #spec, #core
----
+### Create formal specification document
+#small
 
 As a developer/LLM, I want a formal specification so that I can validate FlapJack format and build tools around it.
 
----
-type: FEATURE
-title: Create minimal working examples
-points: 3
-labels: #examples, #docs
----
+### Create project README
+@Claude
 
-As a new user, I want clear examples so that I can understand how to use FlapJack for my projects.
+Clear README explaining FlapJack purpose and quick start instructions.
 
----
-type: FEATURE
-title: Add basic Obsidian support
-points: 2
-labels: #tools, #obsidian
----
+### Create minimal working examples
 
-As an Obsidian user, I want FlapJack to work seamlessly with wiki-links and graph view.
+As a new user, I want clear examples so that I can understand how to use FlapJack for my projects. #medium
 
-## Definition of Done
+### Add basic Obsidian support
+
+As an Obsidian user, I want FlapJack to work seamlessly with wiki-links and graph view. #small
+
 - [ ] Code/format changes work as specified
 - [ ] Documentation is updated
 - [ ] Changes are committed to git
 - [ ] Format remains human and LLM readable
 - [ ] No breaking changes to existing valid FlapJack files
 
-## Story Point Guidelines
-- **1pt:** Simple task, < 1 hour
-- **2pt:** Straightforward feature, few hours
-- **3pt:** Moderate complexity, half day
-- **5pt:** Complex feature, full day
-- **8pt:** Large feature, multiple days
+## Guidelines
+
+### Sizing
+- #xsmall: Quick task, few minutes, definitely under an hour
+- #small: Straightforward feature, few hours
+- #medium: Moderate complexity, upto a day
+- #large: Complex feature, 2-3 days
+- #xlarge: Large feature, ~1 week
+- #xxlarge: Very large feature, multiple weeks
